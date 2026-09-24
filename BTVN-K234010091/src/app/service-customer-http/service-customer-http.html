@@ -1,0 +1,27 @@
+﻿<h2>Bài 18: Danh sách khách hàng</h2>
+<p *ngIf="errorMessage" class="error-message" role="alert">{{ errorMessage }}</p>
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>Mã khách hàng</th>
+        <th>Họ tên</th>
+        <th>Email</th>
+        <th>Tuổi</th>
+        <th>Hình ảnh</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let customerGroup of customerGroups">
+      <tr class="group-row">
+        <td colspan="5">{{ customerGroup.CustomerTypeId }} - {{ customerGroup.CustomterTypeName }}</td>
+      </tr>
+      <tr *ngFor="let customer of customerGroup.Customers">
+        <td>{{ customer.Id }}</td>
+        <td>{{ customer.Name }}</td>
+        <td>{{ customer.Email }}</td>
+        <td>{{ customer.Age }}</td>
+        <td><img [src]="customer.Image" [alt]="customer.Name"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

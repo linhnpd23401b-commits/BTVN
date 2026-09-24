@@ -1,0 +1,24 @@
+﻿<h2>Bài 14: Danh mục sản phẩm</h2>
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>Mã sản phẩm</th>
+        <th>Tên sản phẩm</th>
+        <th>Giá sản phẩm</th>
+        <th>Hình ảnh</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let c of categories">
+      <tr class="group-row">
+        <td colspan="4">{{ c.Cateid }} - {{ c.CateName }}</td>
+      </tr>
+      <tr *ngFor="let p of c.Products">
+        <td>{{ p.ProductId }}</td>
+        <td>{{ p.ProductName }}</td>
+        <td>{{ p.Price | number:'1.0-0' }} đ</td>
+        <td><img [src]="p.Image" [alt]="p.ProductName"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

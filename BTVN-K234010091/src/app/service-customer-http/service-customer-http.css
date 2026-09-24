@@ -1,0 +1,10 @@
+﻿td img {
+  display: block;
+  width: 150px;
+  height: 125px;
+  object-fit: contain;
+}
+
+.error-message {
+  color: #b00020;
+}

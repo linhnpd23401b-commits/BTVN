@@ -1,0 +1,42 @@
+﻿#container {
+  margin-bottom: 16px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  position: relative;
+  width: 120px;
+}
+
+button, a {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px 12px;
+  color: #333;
+  background: #e8eef4;
+  border: 1px solid #bbb;
+  text-align: left;
+  text-decoration: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+li ul {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+li:hover ul, li:focus-within ul {
+  display: block;
+}
+
+a:hover, a:focus-visible {
+  background: #d4e3f0;
+}

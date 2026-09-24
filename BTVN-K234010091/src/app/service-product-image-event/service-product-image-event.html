@@ -1,0 +1,23 @@
+﻿<h2>Bài 13: Danh sách sản phẩm</h2>
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>Mã sản phẩm</th>
+        <th>Tên sản phẩm</th>
+        <th>Giá sản phẩm</th>
+        <th>Hình ảnh</th>
+        <th>Chi tiết</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of products">
+        <td>{{ p.ProductId }}</td>
+        <td>{{ p.ProductName }}</td>
+        <td>{{ p.Price | number:'1.0-0' }} đ</td>
+        <td><img [src]="p.Image" [alt]="p.ProductName"></td>
+        <td><button (click)="viewDetail(p)">Xem chi tiết</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,32 @@
+﻿body {
+  margin: 16px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #bbb;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+th, .group-row td {
+  background: #edf2f7;
+}
+
+button {
+  cursor: pointer;
+}

@@ -1,0 +1,25 @@
+﻿<h2>Chi tiết sản phẩm</h2>
+<button (click)="goBack()">Quay lại</button>
+<div class="table-container" *ngIf="selectedProduct; else notFound">
+  <table>
+    <tr>
+      <th>Mã sản phẩm</th>
+      <td>{{ selectedProduct.ProductId }}</td>
+    </tr>
+    <tr>
+      <th>Tên sản phẩm</th>
+      <td>{{ selectedProduct.ProductName }}</td>
+    </tr>
+    <tr>
+      <th>Giá sản phẩm</th>
+      <td>{{ selectedProduct.Price | number:'1.0-0' }} đ</td>
+    </tr>
+    <tr>
+      <th>Hình ảnh</th>
+      <td><img [src]="selectedProduct.Image" [alt]="selectedProduct.ProductName"></td>
+    </tr>
+  </table>
+</div>
+<ng-template #notFound>
+  <p>Không tìm thấy sản phẩm.</p>
+</ng-template>

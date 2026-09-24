@@ -1,0 +1,49 @@
+[
+  {
+    "CustomerTypeId": 1,
+    "CustomterTypeName": "VIP",
+    "Customers": [
+      {
+        "Id": "Cus123",
+        "Name": "Rapunzel",
+        "Email": "rapunzel@example.com",
+        "Age": 18,
+        "Image": "assets/avatars/2024hbdisneyprincessrapunzel-1755313852553-17553138528321247551677.webp"
+      },
+      {
+        "Id": "Cus456",
+        "Name": "Cinderella",
+        "Email": "cinderella@example.com",
+        "Age": 19,
+        "Image": "assets/avatars/images-motthegioi-vn_tuoi-that-cua-12-cong-chua-disney-hinh-anh-2.jpg"
+      },
+      {
+        "Id": "Cus789",
+        "Name": "Belle",
+        "Email": "belle@example.com",
+        "Age": 17,
+        "Image": "assets/avatars/Princess_Belle.jpg"
+      }
+    ]
+  },
+  {
+    "CustomerTypeId": 2,
+    "CustomterTypeName": "Normal",
+    "Customers": [
+      {
+        "Id": "Cus000",
+        "Name": "Ariel",
+        "Email": "ariel@example.com",
+        "Age": 16,
+        "Image": "assets/avatars/images.jpg"
+      },
+      {
+        "Id": "Cus111",
+        "Name": "Jasmine",
+        "Email": "jasmine@example.com",
+        "Age": 16,
+        "Image": "assets/avatars/images-motthegioi-vn_tuoi-that-cua-12-cong-chua-disney-hinh-anh-11.jpg"
+      }
+    ]
+  }
+]
